@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1188,1007.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1188,1204.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -94,7 +94,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="496,942.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="496,1140" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Location">
         <Variable.Default>
@@ -114,13 +114,13 @@
         </OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Zillow.com" sap:VirtualizedContainerService.HintSize="433.6,548.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="1c0873a4-449b-4a76-be00-6a4b0848c6b0" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Zillow.com" sap:VirtualizedContainerService.HintSize="433.6,746.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="1c0873a4-449b-4a76-be00-6a4b0848c6b0" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,332" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,529.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -136,6 +136,11 @@
                 </InArgument>
               </uix:NTypeInto.Text>
             </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click For Sale Button" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c0873a4-449b-4a76-be00-6a4b0848c6b0" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/" DesignTimeRectangle="1164, 672, 250, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'For sale'" FullSelectorArgument="&lt;webctrl aaname='For sale' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='For sale' tag='BUTTON' type='' class='StyledButton-c11n-8-86-1__sc-wpcbcc-0 cbLGts' check:innerText='For sale' /&gt;" Guid="3aeb7995-6e64-4d9e-8b25-687128cead3d" ImageBase64="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" InformativeScreenshot="03822aadd9648ce5f8ee7315301f3623.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zillow: Real Estate, Apartments, Mortgages &amp;amp; Home Values' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
